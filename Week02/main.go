@@ -1,8 +1,3 @@
-学习笔记
-
-在 err 发生的地方 Wrap，一路透传给调用方，最终在 IO 边界打 log。
-
-```go
 package main
 
 import (
@@ -78,4 +73,3 @@ func IsBizErr(err error) bool {
 	_, ok := err.(*bizErr)
 	return ok
 }
-```
